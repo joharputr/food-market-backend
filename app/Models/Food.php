@@ -15,7 +15,6 @@ class Food extends Model
       'name','description','ingredients','price','rate','types','picturePath'  
     ];
 
-
     public function getCreatedAtAttribute($value){
         return Carbon::parse($value)->timestamp;
     }
